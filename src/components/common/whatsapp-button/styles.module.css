@@ -1,0 +1,36 @@
+.whatsappButton {
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #25D366;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px 0px rgba(34 ,34 ,34 ,0.75);
+    z-index: 9;
+}
+
+.whatsappButton svg {
+    color: #000;
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .whatsappButton {
+        bottom: 85px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsappButton svg {
+        width: 25px;
+        height: 25px;
+    }
+}

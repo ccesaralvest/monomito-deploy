@@ -1,0 +1,84 @@
+.section_two {
+}
+
+.section_two_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+.section_two a {
+  display: flex;
+  justify-content: center;
+}
+
+.section_two_card_image {
+  text-decoration: none;
+}
+
+.section_two_card button {
+  overflow: hidden;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.section_two_card_image:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.section_two_card_image:not(:hover) {
+  transition: 0.5s;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.section_two_see_more {
+  background-color: #000;
+  padding: 3.5vw 0;
+  width: 100%;
+}
+
+.section_two_see_more_button {
+  font-family: BebasKaiFont;
+  font-size: 27px;
+  font-weight: bold;
+  border: none;
+  padding: 14px 40px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.section_two_see_more_button:hover {
+  background-color: #333;
+}
+
+.section_two_see_more_button:hover a {
+  color: #fff;
+}
+
+.section_two_see_more_button a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_two_card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section_two_see_more {
+    padding: 30px 0;
+  }
+
+  .section_two_see_more_button {
+    font-size: 16px;
+    padding: 8px 26px;
+  }
+}
